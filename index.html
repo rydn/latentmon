@@ -9,7 +9,7 @@
         var chart = new SmoothieChart({ grid: { fillStyle: "#ffffff"}, labels: { fillStyle: "#000" } })
           , latency = new TimeSeries()
 
-        chart.addTimeSeries(latency, { strokeStyle: 'rgba(69, 183, 244, 1)', fillStyle: 'rgba(255, 255, 255, 1)', lineWidth: 4 });
+        chart.addTimeSeries(latency, { strokeStyle: 'rgba(69, 183, 244, 1)', fillStyle: 'rgba(255, 255, 255, 1)', lineWidth: 2 });
         chart.streamTo(document.getElementById("smoothie"), 500);
         document.getElementById('v').innerHTML = io.version;
 
