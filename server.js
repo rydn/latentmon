@@ -10,11 +10,12 @@ app.get('/', function (req, res) {
 });
 
 app.listen(4000);
+console.log('[server up listening on port 4000]');
 
 // socket.io
 var io = sio.listen(app);
 io.set('log level', false);
-io.set('transports', 'websocket']);
+io.set('transports', ['websocket']);
 io.sockets.on('connection', function (socket) {
   socket.on('message', function (msg) {
     socket.send(msg);
