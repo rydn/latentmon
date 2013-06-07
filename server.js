@@ -5,12 +5,8 @@ var express = require('express')
 app = express.createServer();
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function (req, res) {
-  res.sendfile('index.html');
-});
-
-app.listen(4000);
-console.log('[server up listening on port 4000]');
+app.listen(40231);
+console.log('[server up listening on port 40231]');
 
 // socket.io
 var io = sio.listen(app);
